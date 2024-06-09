@@ -23,13 +23,8 @@ $(document).keypress(function() {
     started = true;
   }
 });
-$(document).click(function() {
-  if (!started) {
-    $(".header").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
+
+
 
 $(".image").on("click",function(){
   var inputColor = $(this).attr("id")
