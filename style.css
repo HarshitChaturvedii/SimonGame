@@ -10,8 +10,12 @@ body{
     
     
 }
-.header{
+.header {
     grid-area: 1/1/1/5;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
 }
 .image1{
     grid-area: 2/1/2/5;
@@ -53,7 +57,7 @@ body{
     text-align: center;
     margin: 0px;
     font-family: myFirstFont;
-    font-size: x-large;
+    font-size: 70px;
     color: rgb(255, 255, 0);
 }
 @font-face {
@@ -68,6 +72,7 @@ body{
     outline: 2px solid white;
     
 } 
+
 @media (max-width : 494px) {
     .image{
         display: inline-block;
@@ -111,4 +116,11 @@ body{
         font-size: 10px;
         margin-top: 40px;
     }
+}
+.game-over{
+    background-color: rgba(255, 0, 0, 0.792);
+    filter: opacity(1);
+    background-image: none;
+    
+
 }
