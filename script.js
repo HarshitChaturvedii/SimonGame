@@ -16,14 +16,13 @@ $(".image").on("click",function(){
     audio.play();
 })
 
-$(document).keypress(function() {
+$("button").click(function() {
   if (!started) {
     $(".header").text("Level " + level);
     nextSequence();
     started = true;
   }
 });
-
 
 
 $(".image").on("click",function(){
@@ -72,7 +71,15 @@ function startOver() {
   level = 0;
   flashArray = [];
   started = false;
+
 }
+
+
+
+
+
+
+
 
 
 
