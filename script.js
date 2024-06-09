@@ -44,7 +44,7 @@ function checkAnswer(currentLevel) {
     var aud = new Audio("wrong.mp3")
     aud.play();
     $("body").addClass("game-over");
-    $(".header").text("Game Over, Press Any Key to Restart");
+    $(".header").text("Game Over, Press Any Key or Reload to Restart");
 
     setTimeout(function () {
       $("body").removeClass("game-over");
